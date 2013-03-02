@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GPG4Browsers OpenPGP Encryption Test</title>	
+</head>
+<body>
+	<h1>GPG4Browsers OpenPGP Encryption Test</h1>
+	<div>
+		<textarea cols="60" rows="8" name="data" id="data"></textarea>
+	</div>
+
+	<div id="controls">
+		<label for="password">Password</label>
+		<input type="text" name="password" id="password" placeholder="optional">
+
+		<label for="encryption-strength">Strength</label>
+		<select name="encryption-strength" id="encryption-strength">
+			<option value="512">512</option>
+			<option value="1000">1000</option>
+			<option value="2048">2048</option>
+		</select>
+
+		<button id="encrypt">Encrypt</button>
+		<button id="decrypt">Decrypt</button>
+	</div>
+	
+	<script src='jquery-1.9.1.min.js'></script>
+	<script src='openpgp.min.js'></script>
+	<script src='encryptor.js'></script>
+	<script src='main.js'></script>
+
+</body>
+</html>
